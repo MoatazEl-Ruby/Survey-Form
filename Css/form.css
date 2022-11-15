@@ -1,0 +1,123 @@
+/* Input Styling */
+
+input {
+  margin-top: 4px;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  border: 2px solid rgb(0, 0, 0, 0.7);
+  border-radius: 7px;
+  color: #f57f17;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+input:focus {
+  outline: none;
+  border-color: #f57f17;
+  box-shadow: 0px 0px 10px #f57f17;
+}
+
+input[type="text"]::placeholder {
+  padding-left: 5px;
+  color: lightslategray;
+  font-family: monospace;
+}
+
+input[type="email"]::placeholder {
+  padding-left: 5px;
+  color: lightslategray;
+  font-family: monospace;
+}
+
+input[type="number"]::placeholder {
+  padding-left: 5px;
+  color: lightslategray;
+  font-family: monospace;
+}
+
+select {
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  border: 2px solid rgb(0, 0, 0, 0.7);
+  border-radius: 7px;
+  color: #f57f17;
+  margin-top: 4px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.specialInput {
+  display: inline-block;
+  width: unset;
+  margin-left: 2px;
+  margin-right: 4px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  color: #f57f17;
+}
+
+/* Select Styling */
+
+select:focus {
+  outline: none;
+  border-color: #f57f17;
+  box-shadow: 0px 0px 10px #f57f17;
+}
+
+select option {
+  color: #f57f17;
+  background-color: black;
+  border: 0px;
+  outline: 0px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+select:invalid {
+  color: lightslategray;
+  font-family: monospace;
+}
+
+/* Textarea Styling  */
+
+textarea::placeholder {
+  color: lightslategray;
+  font-family: monospace;
+  padding: 5px 8px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #f57f17;
+  box-shadow: 0px 0px 10px #f57f17;
+}
+
+textarea {
+  margin-left: -1px;
+  background-color: rgb(0, 0, 0, 0.7);
+  border: 2px solid rgb(0, 0, 0, 0.7);
+  margin-top: 5px;
+  color: #f57f17;
+  width: 100%;
+  resize: vertical;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  padding: 5px 8px;
+}
+
+/* Submit Button Styling  */
+
+#submit {
+  border-radius: unset;
+  font-weight: bold;
+  padding: 5px auto;
+  width: 30%;
+  margin: 10px auto;
+}
+
+input[type="submit"]:hover {
+  outline: none;
+  border-color: #f57f17;
+  box-shadow: 0px 0px 10px #f57f17;
+}
+
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px rgb(0, 0, 0, 0.95) inset;
+  -webkit-text-fill-color: #f57f17;
+}

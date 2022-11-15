@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="Css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="./Images/incognito-icon-20.jpg">
+</head>
+
+<body>
+  <div class="backGround_styling"></div>
+
+  <!-- Header Section  -->
+
+  <header>
+    <h1 id="title">T-shirt Store Survey Form</h1>
+    <img src="./Images/incognito-icon-20.jpg" alt="image" width="50px" height="50px" class="img" />
+    <p id="description">A store who seeks what you like</p>
+  </header>
+
+  <!-- Form Section  -->
+
+  <div class="container">
+    <form id="surveyForm" action="" method="post">
+
+      <!-- Name input -->
+
+      <label id="surveyForm_nameLabel">Name
+        <input class="input" type="text" required placeholder="Enter your name" />
+      </label>
+
+      <!-- Email input  -->
+
+      <label id="surveyForm_emailLabel">Email
+        <input class="input" type="email" required placeholder="Enter your Email" />
+      </label>
+
+      <!-- Age input  -->
+
+      <label id="surveyForm_numberLabel">Age (optional)<input id="number" type="number" min="16" max="45"
+          placeholder="Age" class="input" /></label>
+
+      <!-- Gender Selection  -->
+
+      <label id="gender">
+        Gender
+        <select id="dropdown" required>
+          <option value disabled selected hidden>Select gender</option>
+          <option id="male">Male</option>
+          <option id="female">Female</option>
+        </select>
+      </label>
+
+      <!-- Question 1 -->
+
+      <label id="q1">Would you recommend T-shirt Store to a friend?
+        <label><input class="specialInput" type="radio" name="ans" value="def" />Definitely</label>
+        <label><input class="specialInput" type="radio" name="ans" value="may" />Maybe</label>
+        <label><input class="specialInput" type="radio" name="ans" value="ns" />Not sure</label>
+      </label>
+
+      <!-- Question 2 -->
+
+      <label id="q2">
+        What is your favorite product of Tshirt Store?
+        <select id="dropdown2" required>
+          <option value disabled selected hidden>Select product</option>
+          <option class="polo">Polo T-shirt</option>
+          <option class="round">Round T-shirt</option>
+          <option class="v">V shape T-shirt</option>
+        </select>
+      </label>
+
+      <!-- Question 3 -->
+
+      <label id="q3">
+        How did you know about us?
+        <label><input class="specialInput" type="checkbox" value="yt" />Youtube</label>
+        <label><input class="specialInput" type="checkbox" value="fb" />Facebook</label>
+        <label><input class="specialInput" type="checkbox" value="tw" />Twitter</label>
+        <label><input class="specialInput" type="checkbox" value="ig" />Instagram</label>
+      </label>
+
+      <!-- Comments & Suggestions -->
+
+      <label>Any comments or suggestions?</label>
+      <textarea placeholder="Enter your comment here..." rows="4" cols="50"></textarea>
+      <input id="submit" type="submit" />
+    </form>
+  </div>
+</body>
+
+</html>
